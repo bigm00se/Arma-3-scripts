@@ -1,7 +1,7 @@
 sleep 1;
 
 _camera = "camera" camcreate[7918.35,9840.29,61.3812];
-_camera cameraeffect["Interal","Back"];
+_camera cameraeffect["Internal","Back"];
 
 showcinemaBorder false;
 

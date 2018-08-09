@@ -1,7 +1,7 @@
 sleep 1;
 
 _camera = "camera" camcreate[7918.35,9840.29,61.3812];
-_camera cameraeffect["interal","back"];
+_camera cameraeffect["Interal","Back"];
 
 showcinemaBorder false;
 
@@ -12,6 +12,6 @@ _camera camCommitPrepared 0;
 
 screenshot "C:\Users\josborne\Desktop\test_1.png";
 
-_camera cameraeffect ["terminate","back"];
+_camera cameraeffect ["Terminate","Back"];
 
 camDestroy _camera;

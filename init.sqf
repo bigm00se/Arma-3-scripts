@@ -1,5 +1,10 @@
 sleep 1;
 
+
+_jeep_test = createVehicle [ "Jeep", [7920.04,9776.73,0.166302], [], 0, "NONE"];
+_person_test = createUnit ["B_RangeMaster_F", [7920.90,9776.00,0.166302], [], 0, "FORM"];
+
+
 _camera = "camera" camcreate[7918.35,9840.29,61.3812];
 _camera cameraeffect["Internal","Back"];
 

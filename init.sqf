@@ -1,3 +1,3 @@
 sleep 3;
 
-[] execVM "init_luan.sqf";
+[] execVM "circle_camera_test.sqf";

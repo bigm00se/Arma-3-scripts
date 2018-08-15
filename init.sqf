@@ -12,14 +12,15 @@ _camera = "camera" camcreate[7918.35,9840.29,61.3812];
 _camera cameraeffect["Internal","Back"];
 showcinemaBorder false;
 
-//creates post-processing effects
+/* //creates post-processing effects
 _color_correction = ppEffectCreate ["colorCorrections", 1501];
-/* _color_correction ppEffectEnable true; */
+_color_correction ppEffectEnable true;
 _color_correction ppEffectAdjust [0.1, 1.0, 0.0, [0,0,0,0], [1,1,1,0], [1,1,1,0]];
 _color_correction ppEffectCommit 0;
 
-/* sleep 5; */
+sleep 5; */
 
+[] execVM "ppEffect.sqf";
 
 //prepares the camera for where it will positioned and what to look at
 _camera camPrepareTarget [7920.04,9776.73,0.166302];
@@ -33,17 +34,17 @@ sleep 2;
 
 //takes the screenshot in EO and IR(white-hot)
 setAccTime 0;
-_color_correction ppEffectEnable true;
+/* _color_correction ppEffectEnable true; */
 screenshot "test_EO_1.png";
 uisleep 1;
 true setCamUseTI 0;
-_color_correction ppEffectEnable true;
-_color_correction ppEffectCommit 0;
+/* _color_correction ppEffectEnable true;
+_color_correction ppEffectCommit 0; */
 uisleep 1;
 screenshot "test_IR_1.png";
 uisleep 1;
 false setCamUseTI 0;
-_color_correction ppEffectenable false;
+/* _color_correction ppEffectenable false; */
 setAccTime 1;
 
 sleep 2;
@@ -61,13 +62,13 @@ setAccTime 0;
 screenshot "test_EO_2.png";
 uisleep 1;
 true setCamUseTI 0;
-_color_correction ppEffectEnable true;
-_color_correction ppEffectCommit 0;
+/* _color_correction ppEffectEnable true;
+_color_correction ppEffectCommit 0; */
 uisleep 1;
 screenshot "test_IR_2.png";
 uisleep 1;
 false setCamUseTI 0;
-_color_correction ppEffectenable false;
+/* _color_correction ppEffectenable false; */
 setAccTime 1;
 
 sleep 2;
@@ -85,13 +86,13 @@ setAccTime 0;
 screenshot "test_EO_3.png";
 uisleep 1;
 true setCamUseTI 0;
-_color_correction ppEffectEnable true;
-_color_correction ppEffectCommit 0;
+/* _color_correction ppEffectEnable true;
+_color_correction ppEffectCommit 0; */
 uisleep 1;
 screenshot "test_IR_3.png";
 uisleep 1;
 false setCamUseTI 0;
-_color_correction ppEffectEnable false;
+/* _color_correction ppEffectEnable false; */
 setAccTime 1;
 
 sleep 2;
@@ -109,13 +110,13 @@ setAccTime 0;
 screenshot "test_EO_4.png";
 uisleep 1;
 true setCamUseTI 0;
-_color_correction ppEffectEnable true;
-_color_correction ppEffectCommit 0;
+/* _color_correction ppEffectEnable true;
+_color_correction ppEffectCommit 0; */
 uisleep 1;
 screenshot "test_IR_4.png";
 uisleep 1;
 false setCamUseTI 0;
-_color_correction ppEffectEnable false;
+/* _color_correction ppEffectEnable false; */
 setAccTime 1;
 
 sleep 2;
